@@ -14,8 +14,6 @@ async fn main() {
 #[allow(dead_code)]
 struct T {
     #[serde(default, deserialize_with = "empty_string_as_none")]
-    // #[serde_as(as = "NoneAsEmptyString")]
-    // #[serde(with = "serde_with::rust::string_empty_as_none")]
     a: Option<i32>,
     b: Option<i32>,
 }
